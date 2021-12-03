@@ -14,7 +14,6 @@ import edu.baylor.swe.repositories.ContestRepository;
 
 @SpringBootTest
 class ContestTests {
-
 	@Autowired
 	private ContestRepository contestRepo;
 
