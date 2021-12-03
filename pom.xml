@@ -13,13 +13,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MidtermApp</name>
 	<description>Midterm Application</description>
-	<configuration>
-        <source>1.8</source>
-        <target>1.8</target>
-    </configuration>
 	<properties>
+     <maven.compiler.source>1.8</maven.compiler.source>
+     <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+	<!-- <properties>
 		<java.version>11</java.version>
-	</properties>
+	</properties> -->
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
