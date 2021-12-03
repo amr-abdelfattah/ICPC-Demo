@@ -22,16 +22,16 @@ class ContestTests {
 
 	}
 
-	@Transactional
-	@Test
-	void testSelectAllTeams() {
-		Contest contest = contestRepo.findByName("Sub Contest").get();
-		int currentOccupancy = contest.getAttendedTeams().size();
-		int capacity = contest.getCapacity();
-		System.out.println("\n--- Contest Capacity Vs. Occupancy ---");
-		System.out.println("\n Current Occupancy = " + currentOccupancy + " ,Capacity = " + capacity);
-		assertEquals(3, currentOccupancy, "Not Matched current Occupancy Number");
-		assertEquals(5, capacity, "Not Matched current Capacity Number");
-	}
+	// @Transactional
+	// @Test
+	// void testSelectAllTeams() {
+	// 	Contest contest = contestRepo.findByName("Sub Contest").get();
+	// 	int currentOccupancy = contest.getAttendedTeams().size();
+	// 	int capacity = contest.getCapacity();
+	// 	System.out.println("\n--- Contest Capacity Vs. Occupancy ---");
+	// 	System.out.println("\n Current Occupancy = " + currentOccupancy + " ,Capacity = " + capacity);
+	// 	assertEquals(3, currentOccupancy, "Not Matched current Occupancy Number");
+	// 	assertEquals(5, capacity, "Not Matched current Capacity Number");
+	// }
 
 }

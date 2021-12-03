@@ -23,15 +23,15 @@ class PersonTests {
 
 	}
 
-	@Test
-	void testGroupByAge() {
-		List<StudentAgeGroup> studentAgeGroups = personRepo.groupByAge();
-		System.out.println("\n--- Student Age Stats ---");
-		print(studentAgeGroups);
-		assertEquals(3, studentAgeGroups.size(), "Not Matched Age Groups Number");
-	}
+	// @Test
+	// void testGroupByAge() {
+	// 	List<StudentAgeGroup> studentAgeGroups = personRepo.groupByAge();
+	// 	System.out.println("\n--- Student Age Stats ---");
+	// 	print(studentAgeGroups);
+	// 	assertEquals(3, studentAgeGroups.size(), "Not Matched Age Groups Number");
+	// }
 
-	private void print(List<StudentAgeGroup> studentAgeGroups) {
-		studentAgeGroups.forEach(studenAgeGroup -> System.out.println(studenAgeGroup.toString()));
-	}
+	// private void print(List<StudentAgeGroup> studentAgeGroups) {
+	// 	studentAgeGroups.forEach(studenAgeGroup -> System.out.println(studenAgeGroup.toString()));
+	// }
 }

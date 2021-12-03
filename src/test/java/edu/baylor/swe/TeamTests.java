@@ -19,39 +19,39 @@ import edu.baylor.swe.repositories.TeamRepository;
 @SpringBootTest
 class TeamTests {
 
-	@Autowired
-	private TeamRepository teamRepo;
+	// @Autowired
+	// private TeamRepository teamRepo;
 
-	@Autowired
-	private ContestRepository contestRepo;
+	// @Autowired
+	// private ContestRepository contestRepo;
 
-	@BeforeEach
-	void setup() {
+	// @BeforeEach
+	// void setup() {
 
-	}
+	// }
 	
-	@Test
-	@Transactional
-	void testSelectAllTeams() {
-		Contest contest = contestRepo.findByName("Sub Contest").get();
-		List<Team> contestTeams = teamRepo.findByAttendedContest_Id(contest.getId());
-		System.out.println("\n--- All Teams ---");
-		print(contestTeams);
-		assertEquals(3, contestTeams.size(), "Not Matched Number Attended Teams");
-	}
+	// @Test
+	// @Transactional
+	// void testSelectAllTeams() {
+	// 	Contest contest = contestRepo.findByName("Sub Contest").get();
+	// 	List<Team> contestTeams = teamRepo.findByAttendedContest_Id(contest.getId());
+	// 	System.out.println("\n--- All Teams ---");
+	// 	print(contestTeams);
+	// 	assertEquals(3, contestTeams.size(), "Not Matched Number Attended Teams");
+	// }
 
-	@Test
-	@Transactional
-	void testSelectAllTeams2() {
-		Contest contest = contestRepo.findByName("Sub Contest").get();
-		List<Team> contestTeams = contest.getAttendedTeams();
-		System.out.println("\n--- All Teams With Another Approach ---");
-		print(contestTeams);
-		assertEquals(3, contestTeams.size(), "Not Matched Number Attended Teams");
-	}
+	// @Test
+	// @Transactional
+	// void testSelectAllTeams2() {
+	// 	Contest contest = contestRepo.findByName("Sub Contest").get();
+	// 	List<Team> contestTeams = contest.getAttendedTeams();
+	// 	System.out.println("\n--- All Teams With Another Approach ---");
+	// 	print(contestTeams);
+	// 	assertEquals(3, contestTeams.size(), "Not Matched Number Attended Teams");
+	// }
 
-	private void print(List<Team> teams) {
-		teams.forEach(team -> System.out.println(team.toString()));
-	}
+	// private void print(List<Team> teams) {
+	// 	teams.forEach(team -> System.out.println(team.toString()));
+	// }
 
 }
